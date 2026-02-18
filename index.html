@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,6 +16,10 @@
       margin: 0;
       padding: 0;
       box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
     }
 
     body {
@@ -59,7 +64,7 @@
       transition: background 0.3s;
     }
 
-    nav a:hover {
+    nav a:hover, nav a.active {
       background-color: #064a32;
     }
 
@@ -114,17 +119,36 @@
     }
 
     .profile-img {
-      width: 250px;
-      height: auto;
-      border-radius: 15px;
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
       object-fit: cover;
       border: 4px solid #0a6847;
       margin-bottom: 1rem;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
     }
 
     .center {
       text-align: center;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+
+    table, th, td {
+      border: 1px solid #ccc;
+    }
+
+    th, td {
+      padding: 10px;
+      text-align: center;
+    }
+
+    th {
+      background-color: #0a6847;
+      color: white;
     }
 
     /* --- Footer --- */
@@ -145,10 +169,6 @@
       main {
         padding: 2rem 1rem;
       }
-
-      .profile-img {
-        width: 200px;
-      }
     }
   </style>
 </head>
@@ -163,6 +183,7 @@
     <a href="#about">About</a>
     <a href="#skills">Skills</a>
     <a href="#career">Career Objective</a>
+    <a href="#science">Scientific Insight</a>
     <a href="#contact">Contact</a>
   </nav>
 
@@ -175,12 +196,10 @@
     <section id="about">
       <h2 class="section-title">About Me</h2>
       <div class="card center">
-        <!-- Added your uploaded IFoS officer photo -->
-        <img src="ifos-alpha.jpg" alt="Alpha Blessy in IFoS uniform" class="profile-img">
-        <!-- Make sure the image file is in the same folder as this HTML file -->
+        <img src="https://cdn.pixabay.com/photo/2017/01/31/21/22/forest-2026642_1280.jpg" alt="Alpha Blessy Photo" class="profile-img">
         <p>Hello! I’m <strong>Alpha Blessy</strong>, a Physics postgraduate student at <strong>Madras Christian College</strong>. 
           I completed my schooling in Kanchipuram and my undergraduate studies in MCC, Tambaram. 
-          Currently, I serve as the <strong>Prayer Secretary</strong> of our department union.</p>
+          Currently, I serve as the <strong>Prayer Secretary</strong> of our department union, where I help coordinate gatherings that strengthen both academic and spiritual life.</p>
       </div>
     </section>
 
@@ -207,11 +226,69 @@
       </div>
     </section>
 
+    <!-- Scientific Insight Section -->
+    <section id="science">
+      <h2 class="section-title">Scientific Insight: Why Dogs Bite Deer 🐕🦌</h2>
+      <div class="card">
+        <p>Even though it seems cruel, a dog’s attack on a deer is <strong>not purely out of malice or hunger</strong> — it stems from <strong>instincts, brain chemistry, and behavioral triggers</strong>.</p>
+
+        <h3>🧠 1. Predatory Instinct (Inherited from Wolves)</h3>
+        <p>Dogs (<em>Canis lupus familiaris</em>) descended from wolves (<em>Canis lupus</em>), natural hunters of herbivores like deer. Domestic dogs retain this <strong>prey drive</strong> — the instinct to chase and bite moving animals.</p>
+        <ul>
+          <li><strong>Scientific Basis:</strong> The mesolimbic reward system releases dopamine and adrenaline during the chase, making it pleasurable and self-reinforcing.</li>
+        </ul>
+
+        <h3>⚡ 2. Territorial or Protective Behavior</h3>
+        <p>Dogs may see deer as intruders. The <strong>amygdala</strong> activates a fight-or-flight response, causing aggression.</p>
+        <ul>
+          <li><strong>Biological Reaction:</strong> The sympathetic nervous system raises heart rate and muscle tension, leading to barking or biting.</li>
+        </ul>
+
+        <h3>🧬 3. Lack of Socialization or Training</h3>
+        <p>Untrained dogs cannot distinguish wildlife from threats. Without strong <strong>frontal lobe inhibition</strong>, instincts dominate.</p>
+        <ul>
+          <li><strong>Trained vs. Untrained:</strong> Trained dogs use the prefrontal cortex to control aggression; untrained dogs act instinctively.</li>
+        </ul>
+
+        <h3>🍖 4. Hunger or Learned Behavior</h3>
+        <p>Stray dogs may attack for food. After one success, <strong>operant conditioning</strong> reinforces the pattern: <em>chase → bite → food → reward</em>.</p>
+
+        <h3>💡 Summary Table</h3>
+        <table>
+          <tr>
+            <th>Cause</th>
+            <th>Biological Basis</th>
+            <th>Result</th>
+          </tr>
+          <tr>
+            <td>Predatory instinct</td>
+            <td>Dopamine & adrenaline release</td>
+            <td>Chase and bite</td>
+          </tr>
+          <tr>
+            <td>Territorial defense</td>
+            <td>Amygdala & fight-or-flight</td>
+            <td>Attack intruder</td>
+          </tr>
+          <tr>
+            <td>Poor training</td>
+            <td>Weak frontal lobe inhibition</td>
+            <td>Aggression</td>
+          </tr>
+          <tr>
+            <td>Hunger / learning</td>
+            <td>Operant conditioning</td>
+            <td>Repeated attacks</td>
+          </tr>
+        </table>
+      </div>
+    </section>
+
     <!-- Contact Section -->
     <section id="contact">
       <h2 class="section-title">Contact</h2>
       <div class="card center">
-        <p>Email: <a href="mailto:alphablessy@example.com">alphablessy@example.com</a></p>
+        <p>Email: <a href="mailto:alphablessy@example.com">alphablessyselvam@gmail.com</a></p>
         <p>Location: Tamil Nadu, India 🇮🇳</p>
       </div>
     </section>
